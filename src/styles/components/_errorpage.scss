@@ -1,0 +1,29 @@
+.errorpage {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  h1 {
+    font-size: 11em;
+    color: #ff6060;
+  }
+  h3 {
+    color: #ff6060;
+    margin-bottom: 85px;
+  }
+
+  .backLink {
+    color: #ff6060;
+  }
+  @media screen and (max-width: 555px) {
+    h1 {
+      font-size: 5.5em;
+    }
+    h3 {
+        margin-top: 80px;
+        margin-bottom: 95px;
+      }
+  }
+}

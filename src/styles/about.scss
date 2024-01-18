@@ -1,0 +1,22 @@
+.qualiteloc {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  height: 70vh;
+  border: 1px solid red;
+
+  .serviceName {
+    margin: 25px;
+    padding: 15px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #ff6060;
+    color: white;
+  }
+}
