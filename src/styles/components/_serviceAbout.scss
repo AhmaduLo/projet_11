@@ -1,0 +1,54 @@
+.qualiteloc {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+
+  .container {
+    margin: 25px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+
+    .serviceName {
+      background-color: #ff6060;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+      border-radius: 10px;
+      color: white;
+      position: relative;
+
+      .fontChevron {
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+      }
+      .open {
+        transition: 0.5s ease-in-out;
+        transform: rotate(-180deg);
+      }
+    }
+    .container_test {
+      background: #e2e2e2d2;
+      color: #ff6060;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      overflow: hidden;
+      height: 0px;
+      margin-top: -5px;
+      transition: 0.5s ease-out;
+
+      p {
+        margin: 16px;
+      }
+    }
+    .container_test.deroulement {
+      overflow: auto;
+      height: 110px;
+      transition: 0.5s;
+    }
+  }
+}
