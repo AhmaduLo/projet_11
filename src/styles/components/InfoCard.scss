@@ -1,0 +1,194 @@
+.container_all_info {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+
+  .images {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .chevronLeft {
+      position: absolute;
+      font-size: 50px;
+      color: white;
+      top: 50%;
+      left: 2%;
+      cursor: pointer;
+    }
+    .chevronRight {
+      position: absolute;
+      font-size: 50px;
+      color: white;
+      top: 50%;
+      right: 2%;
+      cursor: pointer;
+    }
+  }
+
+  .cont_profil_tittle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+
+    .tittle_localisation {
+      color: #ff6060;
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      .trois_border {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        span {
+          color: white;
+          background-color: #ff6060;
+          border-radius: 15px;
+          width: 100px;
+          height: 25px;
+          font-size: 12px;
+          margin: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .profil_note {
+    .nom_photo {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      p {
+        color: #ff6060;
+      }
+
+      .img_profil {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background-color: gray;
+        margin: 5px;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+          border-radius: 100%;
+        }
+      }
+    }
+    .etoile {
+      display: flex;
+
+      .etoileIcone {
+        color: #e3e3e3;
+        margin-right: 16px;
+        cursor: pointer;
+      }
+      .etoileIcone.like {
+        color: #ff6060;
+      }
+    }
+  }
+  .description {
+    display: flex;
+
+    .container {
+      margin: 25px;
+      width: 90%;
+      border-radius: 10px;
+
+      .serviceName {
+        background-color: #ff6060;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        border-radius: 10px;
+        color: white;
+        position: relative;
+
+        .fontChevron {
+          cursor: pointer;
+          transition: 0.5s ease-in-out;
+        }
+        .open {
+          transition: 0.5s ease-in-out;
+          transform: rotate(-180deg);
+        }
+      }
+      .container_test {
+        background: #e2e2e2d2;
+        color: #ff6060;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        overflow: hidden;
+        height: 0px;
+        margin-top: -5px;
+        transition: 0.5s ease-out;
+        width: 90%;
+
+        p {
+          margin: 16px;
+        }
+      }
+      .container_test.deroulement {
+        overflow: auto;
+        height: 210px;
+        transition: 0.5s;
+      }
+    }
+  }
+
+  @media screen and (max-width: 855px) {
+    .cont_profil_tittle {
+      width: 100%;
+    }
+    .tittle_localisation {
+      font-size: 15px;
+      width: 90%;
+    }
+    .cont_profil_tittle {
+      display: block;
+    }
+    .profil_note {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nom_photo {
+      order: 2; /* Move to the right */
+    }
+
+    .etoile {
+      order: 1; /* Move to the left */
+    }
+    .description {
+      display: block;
+    }
+    .container_test {
+      background-color: red;
+    }
+  }
+}

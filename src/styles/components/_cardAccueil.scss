@@ -38,19 +38,15 @@
       .title {
         position: absolute;
         left: 2%;
-        bottom: 5%;
+        bottom: 2%;
         width: 70%;
         height: 36px;
         overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
         h3 {
           font-size: 13px;
-          font-weight: bold;
-          color: #ff6060;
-          text-align: center;
+          color: #ffffff;
+          text-align: left;
         }
       }
     }
