@@ -24,8 +24,21 @@
       cursor: pointer;
 
       .card_img {
+        position: relative;
         width: 100%;
         height: 100%;
+        
+
+        span {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0%;
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          pointer-events: none;
+        }
 
         img {
           width: 100%;

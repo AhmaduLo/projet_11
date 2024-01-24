@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Accueil />} />
         <Route path="/about" element={<About />} />
         <Route path="/infoLoc/:id" element={<InfoLoc/>} />
-       {/* path"*" fonctionne si jamais l'url ne correspond a rien  */}
+        {/* path"*" fonctionne si jamais l'url ne correspond a rien  */}
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>

@@ -4,7 +4,7 @@ const footer = (props) => {
   return (
     <div className="footer">
       <div className="imageLogo">
-        <img src="./logo.png" alt="logo" />
+        <img src="/logowhite.png" alt="logo" />
       </div>
       <div className="descriptive">2020 Kasa.All rights reservrd</div>
     </div>

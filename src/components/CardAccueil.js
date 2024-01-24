@@ -28,6 +28,7 @@ const CardAccueil = (props) => {
                 alt={item.title}
                 onClick={() => handleImageClick(item.id)}
               />
+              <span></span>
             </div>
             <div className="title">
               {" "}

@@ -4,7 +4,7 @@ const Navigation = (props) => {
   return (
     <div className="navigation">
       <div className="logo">
-        <img src="./logo.png" alt="logo" />
+        <img src="/logo.png" alt="logo" />
       </div>
       <div className="navige">
         <ul>
