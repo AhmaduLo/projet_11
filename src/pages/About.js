@@ -7,7 +7,7 @@ const About = (props) => {
  
  
   return (
-    <div>
+    <div className="about">
       <Navigation />
       <ServiceAbout/>
       <Footer />
